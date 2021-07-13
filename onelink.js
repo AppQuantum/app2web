@@ -48,11 +48,11 @@ class OneLinkUrlGenerator {
             return null; // in this case, the original store links in the install buttons stay the same
         }
 
-        if (isFacebook()) {
-            console.debug("This user comes from a paid Facebook ad - don't do anything. \nKeep direct app store links.");
-            // the caller should make sure a return value of null will leave the original link
-            return null;
-        }
+//         if (isFacebook()) {
+//             console.debug("This user comes from a paid Facebook ad - don't do anything. \nKeep direct app store links.");
+//             // the caller should make sure a return value of null will leave the original link
+//             return null;
+//         }
 
         // Google Ads
         let pidValue = this.mediaSource;
